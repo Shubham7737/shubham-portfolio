@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/utility.css" />
-    <title>Document</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <header>
@@ -35,10 +35,10 @@
       <section id="HOME">
         <div class="home">
           <div class="selfName">
-            <h1>Hey, My name is Shubham Danu</h1>
+            <h1 id="headerRun"></h1>
             <p>I'm Front-end developer.</p>
 
-            <button id="cv">Download CV</button>
+            <a href="./cv-shubham.pdf"><button id="cv">Download CV</button></a>
           </div>
         </div>
       </section>
@@ -132,16 +132,18 @@
 
       <section id="CONTACT">
         <div class="contact">
-          <form action="">
+          <form action="https://api.web3forms.com/submit" method="POST" class="form">
+            <input type="hidden" name="access_key" value="b489ce40-9100-42b2-aad9-5ee6fe7a57af">
             <label for="">Name:</label>
-            <input type="text" placeholder="Full Name" />
+            <input type="text" name="name" placeholder="Full Name" required />
             <label for="">Email:</label>
-            <input type="email" placeholder="Email" />
+            <input type="email" name="email" placeholder="Email" required/>
             <label for="">Message</label>
-            <textarea name="" id="" placeholder="message_type"></textarea>
+            <textarea name="message" id=""  placeholder="message_type" required></textarea>
+            <!-- <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> -->
+            <button type="submit">Submit</button>
           </form>
 
-          <button>Submit</button>
         </div>
       </section>
 
@@ -149,13 +151,13 @@
 
       <footer>
         <div class="logo footer1">
-          <span><i class="fa-brands fa-instagram insta"></i></span>
-          <span><i class="fa-brands fa-github git"></i></span>
-          <span><i class="fa-brands fa-linkedin link"></i></span>
-          <span><i class="fa-solid fa-envelope gml"></i></span>
+          <span><a href="https://www.instagram.com/baddwolf__/?hl=en"><i class="fa-brands fa-instagram insta"></i></a></span>
+          <span><a href="https://github.com/Shubham7737"><i class="fa-brands fa-github git"></i></a></span>
+          <span><a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin link"></i></a></span>
+          <span><a href="https://danushubham18@gmail.com"><i class="fa-solid fa-envelope gml"></i></a></span>
         </div>
         <div class="footer2">
-          <p>Made with by Shubham Dannu</p>
+          <p>Made with by Shubham Danu</p>
         </div>
       </footer>
     </div>
